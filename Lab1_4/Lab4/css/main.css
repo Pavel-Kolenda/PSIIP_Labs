@@ -1,0 +1,85 @@
+body{
+    font-family: 'Sono', sans-serif;
+}
+.right{
+    float: right;
+}
+
+#login-register-form{
+    width: 300px;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #da871b;
+    border-radius: 5px;
+}
+
+#login-register-form button{
+    width: 70px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: orange;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#button-center{
+    display: flex;
+    justify-content: center;
+}
+
+#policy{
+    display: flex;
+    justify-content: left;
+}
+
+#login-register-form input{
+    width: 300px;
+    height: 15px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+
+#login-register-form input[type=checkbox] { 
+    width: 15px; 
+    height: 15px; 
+    margin-left: 100px;
+}
+
+img{
+    border-radius: 45px;
+}
+
+.center{
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+    color: hotpink;
+}
+a:visited{
+    color: grey;
+}
+a:hover{
+    text-decoration:underline;
+    text-decoration-color: blueviolet;
+}
+
+.main-text{
+    color: darkorange;
+    font: bold;
+}
+
+.topic-text{
+    color: blue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font: bold;
+}
+
+table, th, td, tr{
+    border: 1px solid;
+    border-style: dotted;
+    align-content: center
+}
