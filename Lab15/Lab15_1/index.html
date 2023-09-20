@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+    function countRabbits()
+    {
+        for(let i = 1; i <= 3; i++)
+            alert("Кролик номер" + i)
+    }
+</script>
+<body>
+    <!-- Task 1 -->
+    <p>
+        <input value="Нажми на меня" onclick="alert('Клик!')" type="button">
+    </p>
+    <!-- Task 2 -->
+    <p>
+        <input type="button" onclick="countRabbits()" value="Нажми меня">
+    </p>
+    <!-- Task 3 -->
+    <p>
+        <input id="elem" type="button" value="Нажми меня">
+        <script>
+            elem.onclick = function()
+            {
+                alert("Спасибо");
+            }
+        </script>
+    </p>
+    <!-- Task 4 -->
+    <p>
+        <button onclick="alert(this.innerHTML)">Нажми меня</button>
+    </p>
+    <!-- Task 5 -->
+    <p>
+        <input id="elem2" type="button" value="Нажми меня">
+        <script>
+            function handler1()
+            {
+                alert("Спасибо!");
+            }
+            function handler2()
+            {
+                alert("Спасибо еще раз");
+            }
+            elem2.onclick = () => alert("Привет");
+            elem2.addEventListener("click", handler1);
+            elem2.addEventListener("click", handler2);
+            // Task 6
+            elem2.removeEventListener("click", handler2);
+        </script>
+    </p>
+    <!-- Task 7 -->
+    <p>
+        <form onclick="alert('form')"> FORM
+            <div onclick="alert('div')"> DIV
+                <p onclick="alert('p')">P</p>
+            </div>
+        </form>
+    </p>
+    <!-- Task 8 -->
+    <p onclick="alert('сюда всплытие не дойдет')">
+        <button onclick="event.stopPropagation()">Кликни</button>
+    </p>
+</body>
+</html>

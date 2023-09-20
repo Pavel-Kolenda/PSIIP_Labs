@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <script src="js/pointer.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Task 1 .Mouse event -->
+    <input value="Нажать" onmouseenter="Hello()" type="button">
+
+    <!-- Task 2. Keyboard event -->
+    <p>Enter name: </p>
+    <p>
+      <input type="text" id="userInput" onkeydown="handleKeyPress(event)">
+    </p>
+
+      <!-- Task 3. Drag&Drop event -->
+      <div id="drag-source" draggable="true" ondragstart="dragStart(event)">Drag & Drop</div>
+      <div id="drop-target" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+
+    <!-- Task 4. Pointer events -->
+    <div id="target"></div>
+      <p id="output">0</p>
+      <script>
+        var count = 0;
+        var outputElement = document.getElementById("output");
+        var target = document.getElementById("target");
+      
+        target.addEventListener("pointermove", incrementAndDisplay);
+      
+        function incrementAndDisplay() {
+          count++;
+          outputElement.textContent = count;
+        }
+      </script>
+
+    <!-- Task 5. Scroll event -->
+    <p id="showScroll">
+      <script>
+        window.addEventListener('scroll', function() {
+          document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+        });
+      </script>
+    </p>
+    
+    <!-- Task 6. Touch screen event -->
+    <p>
+      <div id="touch-target"></div>
+      <div id="touch-feedback">Touch detected!</div>
+    </p>
+    <script>
+      var touchTarget = document.getElementById('touch-target');
+      var touchFeedback = document.getElementById('touch-feedback');
+      
+      touchTarget.addEventListener('touchstart', function(event) {
+        event.preventDefault();
+        
+        touchFeedback.style.display = 'block';
+        
+        setTimeout(function() {
+          touchFeedback.style.display = 'none';
+        }, 1500);
+      });
+    </script>
+
+    <div style="height: 1900px;"></div>
+
+</body>
+</html>

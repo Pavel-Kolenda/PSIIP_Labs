@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<script>
+</script>
+<body onload="startTime()">
+    <!-- Task 1 -->
+    <p>
+        <input type="button" value="Перейти на главную страницу нашего сайта" onclick="go()">
+    </p>
+    <!-- Task 2 -->
+    <div class="block" onclick="dispMes(event)">
+        <p id="par" style="display: none;">Щелчок мыши произведен по координатам: <br>
+            <b><span id="resultX"></span></b> пикс по горизонтали от левой границы окна и <br>
+            <b><span id="resultY"></span></b> пикс по горизонтали от верхней границы окна 
+        </p>
+    </div>
+    <!-- Task 3 -->
+    <p id="par1" onmouseover="start()" onmouseout="stop()"> 
+        Наведите на меня курсор мыши
+    </p>
+    <!-- Task 4 -->
+    <form>
+        <input type="button" value="Показать сигнальное окно через 3 секунды" onclick="timeMsg()">
+    </form>
+    <br>
+    <!-- Task 5 - 6 -->
+    <p>
+        <input type="button" value="Начать отсчет" onclick="doTimer()">
+        <input type="text" id="txt">
+        <input type="button" value="Прекратить отсчет" onclick="stopTimer()">
+    </p>
+
+    <p id="time-txt">
+    </p>
+</body>
+</html>
