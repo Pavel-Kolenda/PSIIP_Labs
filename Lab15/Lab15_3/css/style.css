@@ -1,0 +1,32 @@
+#drag-source {
+    width: 200px;
+    height: 200px;
+    background-color: #d727ee;
+    margin-bottom: 20px;
+}
+  
+  #drop-target {
+    width: 200px;
+    height: 200px;
+    background-color: #e2e2e2;
+}
+#touch-target {
+    width: 200px;
+    height: 200px;
+    background-color: #00ee10;
+}
+  
+#touch-feedback {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#target{
+    width: 200px;
+    height: 200px;
+    background-color: #d727ee;
+    margin-bottom: 20px;
+}
