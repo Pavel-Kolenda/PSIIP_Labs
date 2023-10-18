@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <form id="myForm">
+        <!-- HTML validation -->
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+  
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+  
+        <label for="age">Возраст:</label>
+        <input type="number" name="age" id="age" required pattern="[1-9]{2}" min="15" max="99">
+
+        <label for="gender">Пол:</label>
+        <select id="gender" name="gender">
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select>
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message"></textarea> 
+
+        <label id="privacy-policy" for="check">Согласны с Privacy policy:
+            <input type="checkbox" id="check" name="check">
+        </label>
+  
+        <button id="submit" onclick="handleSubmit(event)">Отправить </button>
+      </form>
+  
+      <div id="output"></div>
+</body>
+</html>
