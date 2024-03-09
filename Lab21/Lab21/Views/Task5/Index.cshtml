@@ -1,0 +1,27 @@
+﻿@{
+    const double NUM_E = 2.71828;
+    double num_e1 = NUM_E;
+    string num_e1_string = num_e1.ToString().GetType().Name;
+    string num_e1_type = num_e1.GetType().Name;
+    int num_e1_int = (int)num_e1;
+    string num_e1_int_type = num_e1_int.GetType().Name;
+    bool num_e1_bool = Convert.ToBoolean(num_e1);
+    string num_e1_bool_type = num_e1_bool.GetType().Name;
+}
+<div>
+    <p>
+        Число e равно = @NUM_E
+    </p>
+    <p>
+        Тип переменной num_e1 равно = @num_e1_type
+    </p>
+    <p>
+        Тип переменной num_e1_string равно = @num_e1_string
+    </p>
+    <p>
+        Тип переменной num_e1_int равно = @num_e1_int_type
+    </p>
+    <p>
+        Тип переменной num_e1_bool равно = @num_e1_bool_type
+    </p>
+</div>
