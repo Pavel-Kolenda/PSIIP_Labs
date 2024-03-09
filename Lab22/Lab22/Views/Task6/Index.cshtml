@@ -1,0 +1,18 @@
+﻿@model Lab22.Models.Task6Model
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(model => model.X)
+        @Html.TextBoxFor(model => model.X)
+    </div>
+    <div>
+        @Html.LabelFor(model => model.Y)
+        @Html.TextBoxFor(model => model.Y)
+    </div>
+    <input type="submit" value="Посчитать" />
+}
+
+<div>
+    <p>Сумма: @Model.B</p>
+</div>

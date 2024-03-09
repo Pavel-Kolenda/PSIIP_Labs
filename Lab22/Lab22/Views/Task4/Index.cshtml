@@ -1,0 +1,10 @@
+﻿@model Lab22.Models.Task4Model
+
+<div>
+    @foreach (var i in Model.Array)
+    {
+        <p>@i</p>
+    }
+
+    <p>Сумма отрицательных чисел = @Model.SumOfNegativeNumbers</p>
+</div>
